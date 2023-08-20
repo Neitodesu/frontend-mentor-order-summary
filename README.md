@@ -24,3 +24,7 @@ Users should be able to:
 - HTML
 - SCSS/CSS
 - Mobile First Design
+
+### SITE LINK
+
+[VISIT SITE](https://neitodesu.github.io/frontend-mentor-order-summary/)
