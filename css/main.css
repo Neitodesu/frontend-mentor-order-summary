@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --color1: hsl(225, 100%, 94%);
+  --color2: hsl(245, 75%, 52%);
+  --color3: hsl(225, 100%, 98%);
+  --color4: hsl(224, 23%, 55%);
+  --color5: hsl(223, 47%, 23%);
+  --color6: hsla(223, 47%, 23%, 0.377);
+  --ff-main: "Red Hat Display";
+  --fw-sm: 500;
+  --fw-md: 700;
+  --fw-lg: 900;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.6;
+  font-family: var(--ff-main);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--color1);
+  display: grid;
+  place-content: center;
+}
+
+.summary-card {
+  width: 340px;
+  margin: 0 auto;
+  background-color: var(--color1);
+  border-radius: 1.5em;
+  overflow: hidden;
+  box-shadow: 0px 8px 10px -10px var(--color5);
+}
+.summary-card .summary-details {
+  text-align: center;
+}
+.summary-card .summary-details h2 {
+  color: var(--color5);
+  font-weight: var(--fw-lg);
+  padding-top: 1em;
+}
+.summary-card .summary-details p {
+  font-size: 1rem;
+  color: var(--color4);
+  padding: 1em 2em;
+}
+.summary-card .summary-plans {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+.summary-card .summary-plans .plans-right {
+  display: flex;
+  gap: 0.6em;
+  align-items: center;
+}
+.summary-card .summary-plans .plans-right img {
+  width: 60px;
+  height: 60px;
+}
+.summary-card .summary-plans .plans-right .plan {
+  color: var(--color5);
+  font-weight: var(--fw-md);
+  font-size: 1rem;
+}
+.summary-card .summary-plans .plans-right .sub-plan {
+  color: var(--color4);
+  font-size: 1rem;
+}
+.summary-card .summary-plans .plans-left a {
+  color: var(--color2);
+}
+.summary-card .summary-plans .plans-left a:hover {
+  opacity: 80%;
+}
+.summary-card .summary-exit {
+  text-align: center;
+  padding: 1.6em 2em 1em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.summary-card .summary-exit .proceed-btn {
+  padding: 0.6em;
+  border-radius: 0.6em;
+  background-color: var(--color2);
+  color: var(--color1);
+  font-size: 1rem;
+  font-weight: var(--fw-md);
+}
+.summary-card .summary-exit .proceed-btn:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+.summary-card .summary-exit .cancel-btn {
+  padding: 0.6em;
+  border-radius: 0.6em;
+  color: var(--color4);
+  background-color: var(--color3);
+  font-size: 1rem;
+  font-weight: var(--fw-md);
+}
+.summary-card .summary-exit .cancel-btn:hover {
+  cursor: pointer;
+  color: var(--color5);
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    background-image: url(/assets/images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}/*# sourceMappingURL=main.css.map */
